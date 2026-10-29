@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "energitrack": {
+      "type": "http",
+      "url": "https://tars.energitrack.io/mcp"
+    }
+  }
+}

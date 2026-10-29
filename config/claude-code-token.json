@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "energitrack-token": {
+      "type": "http",
+      "url": "https://tars.energitrack.io/mcp",
+      "headers": {
+        "Authorization": "Bearer ${ENERGITRACK_AGENT_TOKEN}"
+      }
+    }
+  }
+}
