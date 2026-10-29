@@ -4,7 +4,7 @@ Monitor solar PV systems, solar production, energy consumption, batteries, grid 
 
 ## Install in Claude chat or Cowork
 
-1. Download `energitrack-claude-1.1.0.zip` from EnergiTrack's Agent connections page.
+1. Download `energitrack-claude-1.1.1.zip` from EnergiTrack's Agent connections page.
 2. In Claude open Customize > Plugins > Add > Upload plugin and select the ZIP. In Cowork, open the Cowork tab before Customize if required.
 3. Open the installed plugin's Connectors tab. Add or connect EnergiTrack. If you already connected the same server, use that existing connection instead of duplicating it.
 4. Use `https://tars.energitrack.io/mcp`. If Claude cannot register automatically, choose Sign in now > Use your own OAuth client, enter public client ID `energitrack-claude-mcp-prod`, and leave Client Secret and Request headers blank. Sign in on EnergiTrack's own consent page, never in chat.
@@ -17,7 +17,7 @@ See [Connector documentation](docs/CONNECTOR.md) for OAuth scopes, data handling
 
 ## Claude Code
 
-See INSTALL.md for the account-connector path, local plugin loading and duplicate-server handling. Claude Code sessions using an API key or another model provider have a direct token configuration in config/claude-code-token.json; it contains only an environment reference. The web OAuth client is not a local OAuth registration. Each authentication path still needs live acceptance on the intended client.
+See INSTALL.md for the account-connector path, local plugin loading and duplicate-server handling. Claude Code sessions using an API key or another model provider need separate manual setup through EnergiTrack's Agent connections page. The plugin does not collect credentials from the local machine. The web OAuth client is not a local OAuth registration. Each authentication path still needs live acceptance on the intended client.
 
 ## Current boundaries
 

@@ -1,7 +1,7 @@
 {
   "name": "energitrack",
   "displayName": "EnergiTrack",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Monitor solar PV systems, battery/grid energy and alarms, inspect authorised diagnostics, and preview supported EMS changes across Claude chat, Cowork and Claude Code.",
   "author": {
     "name": "EnergiTrack (Pty) Ltd",
@@ -9,6 +9,7 @@
     "url": "https://www.energitrack.com/"
   },
   "homepage": "https://www.energitrack.com/",
+  "privacyPolicyUrl": "https://www.energitrack.com/policies/index.html#privacy",
   "license": "UNLICENSED",
   "keywords": ["energy", "solar-pv", "battery", "grid-energy", "plant-monitoring", "ems", "mcp"]
 }

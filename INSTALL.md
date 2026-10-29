@@ -23,12 +23,9 @@ The existing public Claude web OAuth registration accepts the web callback only.
 
 ## Claude Code with an API key or another model provider
 
-These sessions do not inherit claude.ai connectors. Use a dedicated personal EnergiTrack token instead:
+These sessions do not inherit claude.ai connectors. Open EnergiTrack's Agent connections page, expand Claude's Code setup section, and follow its separate manual configuration download and instructions. Complete that setup outside this plugin, preserving your other MCP servers. This package neither reads an existing machine credential nor bundles a token-forwarding example.
 
-1. In EnergiTrack Agent connections, create or select a personal token with only the access you intend. Read is sufficient for monitoring. Write requires its separate approval and still follows your current plant permissions.
-2. Store it securely in `ENERGITRACK_AGENT_TOKEN` in the environment that launches Claude Code. For an IDE, restart the extension host with that environment; for SSH or a remote session, set it on the remote host. Never paste the token into a plugin source file, a command line recorded in shell history, or chat.
-3. Merge `mcpServers.energitrack-token` from `config/claude-code-token.json` into your existing project `.mcp.json`, preserving other servers. The packaged file contains an environment reference, not a real token. A missing environment variable must be supplied before connecting.
-4. Load the workflows with `claude --plugin-dir "/absolute/path/to/energitrack"`. Disable the plugin's duplicate direct OAuth server in `/mcp` if necessary, then connect `energitrack-token` and list your plants.
+Load the workflows with `claude --plugin-dir "/absolute/path/to/energitrack"`. Disable the plugin's duplicate direct OAuth server in `/mcp` if necessary, then use the manually configured connection to list your plants.
 
 Revoking this personal token and revoking the OAuth account connector are separate actions. No setup path grants new plant access automatically.
 
